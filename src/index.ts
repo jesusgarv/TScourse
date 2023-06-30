@@ -25,7 +25,7 @@ axios.get(url).then(response => {
  * @param title:string title associated with the todo
  * @param completed:boolean status of the todo object
  */
-const logTodo = (id: number, title: string, completed: boolean) => {
+const logTodo : Function = (id: number, title: string, completed: boolean) => {
     console.log(`
         The Todo with ID: ${id}
         has a title of: ${title}

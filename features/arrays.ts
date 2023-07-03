@@ -28,3 +28,15 @@ const importantDates = [new Date(), '2023/11/03'];
 
 // This is a manual input of this annotation, important if we initialize an empty array
 const moreimportantDates: (string|Date)[] =[new Date(), '2023/11/03'];
+
+// Touples at javascript are not often used, we used maybe when read a csv file
+// of a single row or column, in any other case, we prefered to use objects to model a record
+
+// we can annotate a touple like this
+const drink: [string,boolean,number] = ['brown', true, 4]
+
+// But we can also define a type like this
+type Drink = [string, boolean, number];
+
+// And we can reuse this type of touple
+const newDrink: Drink = ['black', true, 40];
